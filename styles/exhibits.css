@@ -1,0 +1,11 @@
+#exhibits {
+    padding: 100px;
+    margin: auto;
+    color: white;
+    max-width: 500px;
+}
+
+a {
+    font-size: 200%;
+    color: white;
+}

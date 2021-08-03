@@ -1,0 +1,73 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-color: black;
+}
+
+#draggables {
+    min-height: 100%;
+}
+
+.art {
+    width: 100%;
+}
+
+.draggableContent {
+    width: 500px;
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+    cursor: move;
+}
+
+.draggableContentHeader {
+    cursor: move;
+    z-index: 10;
+}
+
+#headerlogo {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 80%;
+    z-index: 12;
+}
+
+#socialMedia {
+    z-index: 11;
+    font-size: 50px;
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2em;
+    background-color: yellow;
+    z-index: 12;
+    font-size:200%;
+    font-weight: bold;
+    font-variant-position: sub;
+}
+
+marquee {
+    behavior: scroll;
+    direction: left;
+}
+
+#myCanvas {
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#message {
+    padding: 100px;
+    margin: auto;
+    color: white;
+    max-width: 500px;
+}

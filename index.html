@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="styles/master.css">
+    <title>URL COMPOST</title>
+
+    <script src="https://unpkg.com/hydra-synth"></script>
+</head>
+<body>
+    <canvas id="myCanvas"></canvas>
+
+    <h1 id="message">I LOVE ME, I LOVE YOU</h1>
+
+    <img id="headerlogo" src="assets/logo.png" alt="URL COMPOST">
+
+    <div id="draggables">
+        <div class="draggableContent" id="socialMedia">
+            <div class="draggableContentHeader">SOCIAL MEDIA</div>
+            <a href="https://twitter.com/urlcompost">TWITTER</a>
+            <a href="https://www.instagram.com/urlcompost/">INSTAGRAM</a>
+            <a href="https://www.facebook.com/urlcompost/">FACEBOOK</a>
+            <a href="https://soundcloud.com/urlcompost">SOUNDCLOUD</a>
+        </div>
+
+        <div class="draggableContent" id="socialMedia">
+            <div class="draggableContentHeader">ARTIST BIO</div>
+            <p style="font-size: 50%;">Waki Badong creates experimental work through the different mediums he chances upon - digital, traditional, film, music, and code.
+                He blends these together to create noisy and brash art.
+                Currently, he is focusing on creating net-based installations that explore disruptive aesthetics and themes.
+            </p>
+        </div>
+
+        <div class="draggableContent" id="socialMedia">
+            <div class="draggableContentHeader">EXHIBITS</div>
+            <a href="exhibits.html">
+                EXHIBITS EXHIBITS EXHIBITS EXHIBITS
+                EXHIBITS EXHIBITS EXHIBITS EXHIBITS
+            </a>
+        </div>
+
+        <div class="draggableContent">
+            <div class="draggableContentHeader">DILAT</div>
+            <video width="320" height="240" controls>
+                <source src="assets/dilat.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="draggableContent">
+            <div class="draggableContentHeader">GLITCH</div>
+            <video width="320" height="240" controls>
+                <source src="assets/glitch.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="draggableContent">
+            <div class="draggableContentHeader">HAND</div>
+            <video width="320" height="240" controls>
+                <source src="assets/hand.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="draggableContent">
+            <div class="draggableContentHeader">LANDSCAPE</div>
+            <video width="320" height="240" controls>
+                <source src="assets/landscape.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="draggableContent">
+            <div class="draggableContentHeader">STOMACH</div>
+            <video width="320" height="240" controls>
+                <source src="assets/stomach.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="draggableContent">
+            <div class="draggableContentHeader">WARRIOR</div>
+            <video class="art" width="320" height="240" controls>
+                <source src="assets/warrior.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="draggableContent">
+            <div class="draggableContentHeader">AMPAO DUTERTE WALANG AMBAG SA LIPUNAN SALOT PASISTA</div>
+            <img class="art" src="assets/ampao.gif" alt="AMPAO DUTERTE WALANG AMBAG SA LIPUNAN SALOT PASISTA">
+        </div>
+
+        <div class="draggableContent">
+            <div class="draggableContentHeader">BARGUE</div>
+            <img class="art" src="assets/b1.jpg" alt="BARGUE">
+        </div>
+
+        <div class="draggableContent">
+            <div class="draggableContentHeader">BARGUE</div>
+            <img class="art" src="assets/b2.jpg" alt="BARGUE">
+        </div>
+
+        <div class="draggableContent">
+            <div class="draggableContentHeader">BARGUE</div>
+            <img class="art" src="assets/b3.jpg" alt="BARGUE">
+        </div>
+
+        <div class="draggableContent">
+            <div class="draggableContentHeader">BARGUE</div>
+            <img class="art" src="assets/b4.jpg" alt="BARGUE">
+        </div>
+
+        <div class="draggableContent">
+            <div class="draggableContentHeader">BARGUE</div>
+            <img class="art" src="assets/b5.jpg" alt="BARGUE">
+        </div>
+
+        <div class="draggableContent">
+            <div class="draggableContentHeader">BARGUE</div>
+            <img class="art" src="assets/b6.jpg" alt="BARGUE">
+        </div>
+
+        <div class="draggableContent">
+            <div class="draggableContentHeader">BARGUE</div>
+            <img class="art" src="assets/b7.jpg" alt="BARGUE">
+        </div>
+
+        <div class="draggableContent">
+            <div class="draggableContentHeader">BARGUE</div>
+            <img class="art" src="assets/b8.jpg" alt="BARGUE">
+        </div>
+
+        <div class="draggableContent">
+            <div class="draggableContentHeader">AMPAO DUTERTE WALANG AMBAG SA LIPUNAN SALOT PASISTA</div>
+            <img class="art" src="assets/ampao.gif" alt="AMPAO DUTERTE WALANG AMBAG SA LIPUNAN SALOT PASISTA">
+        </div>
+
+        <div class="draggableContent">
+            <div class="draggableContentHeader">ARCADE</div>
+            <img class="art" src="assets/arcade.png" alt="ARCADE">
+        </div>
+
+        <div class="draggableContent">
+            <div class="draggableContentHeader">BALLET</div>
+            <img class="art" src="assets/ballet.gif" alt="BALLET">
+        </div>
+
+        <div class="draggableContent">
+            <div class="draggableContentHeader">DRAPERY</div>
+            <img class="art" src="assets/drapery.jpg" alt="DRAPERY">
+        </div>
+
+        <div class="draggableContent">
+            <div class="draggableContentHeader">FRIED RICE</div>
+            <img class="art" src="assets/friedrice.gif" alt="FRIED RICE">
+        </div>
+
+        <div class="draggableContent">
+            <div class="draggableContentHeader">KAMAYAN</div>
+            <img class="art" src="assets/kamayan.gif" alt="KAMAYAN">
+        </div>
+
+        <div class="draggableContent">
+            <div class="draggableContentHeader">SHAPES</div>
+            <img class="art" src="assets/shapes.jpg" alt="SHAPES">
+        </div>
+
+        <div class="draggableContent">
+            <div class="draggableContentHeader">SHATTER</div>
+            <img class="art" src="assets/shatter.jpg" alt="SHATTER">
+        </div>
+
+        <div class="draggableContent">
+            <div class="draggableContentHeader">SKETCH</div>
+            <img class="art" src="assets/sketch.jpg" alt="SKETCH">
+        </div>
+
+        <div class="draggableContent">
+            <div class="draggableContentHeader">TOKWA</div>
+            <img class="art" src="assets/tokwa.png" alt="TOKWA">
+        </div>
+    </div>
+
+    <div id="footer">
+        <marquee>
+            ~ SALAMAT SA PAGTANGKILIK SA MGA HIMALA NG CYBERSPACE ~ THANK YOU, CYBERSPACE
+            ~ SALAMAT SA PAGTANGKILIK SA MGA HIMALA NG CYBERSPACE ~ THANK YOU, CYBERSPACE
+            ~ SALAMAT SA PAGTANGKILIK SA MGA HIMALA NG CYBERSPACE ~ THANK YOU, CYBERSPACE
+            ~ SALAMAT SA PAGTANGKILIK SA MGA HIMALA NG CYBERSPACE ~ THANK YOU, CYBERSPACE
+            ~ SALAMAT SA PAGTANGKILIK SA MGA HIMALA NG CYBERSPACE ~ THANK YOU, CYBERSPACE
+            ~ SALAMAT SA PAGTANGKILIK SA MGA HIMALA NG CYBERSPACE ~ THANK YOU, CYBERSPACE
+            ~ SALAMAT SA PAGTANGKILIK SA MGA HIMALA NG CYBERSPACE ~ THANK YOU, CYBERSPACE
+        </marquee>
+    </div>
+
+    <script type="text/javascript" src="scripts/hydra.js"></script>
+    <script type="text/javascript" src="scripts/dragging.js"></script>
+    <script type="text/javascript" src="scripts/colors.js"></script>
+    <script type="text/javascript" src="scripts/randomPos.js"></script>
+</body>
+</html>
