@@ -1,27 +1,32 @@
-window.addEventListener('load', function(){
+function dragElement(elmnt) {
+    // find the element that you want to drag.
+    var box = elmnt;
 
-    for (let i = 0; i < document.getElementsByClassName("draggableContent").length; i++) {
-        var box2 = document.getElementsByClassName("draggableContent")[i],
-        boxleft, // left position of moving box
-        startx, // starting x coordinate of touch point
-        dist = 0, // distance traveled by touch point
-        touchobj = null // Touch object holder
+    /* listen to the touchmove event,
+    every time it fires, grab the location
+    of touch and assign it to box */
 
-        box2.addEventListener('touchstart', function(e){
-            touchobj = e.changedTouches[0] // reference first touch point
-            boxleft = parseInt(box2.style.left) // get left position of box
-            startx = parseInt(touchobj.clientX) // get x coord of touch point
-            e.preventDefault() // prevent default click behavior
-        }, false)
+    box.addEventListener('touchmove', function(e) {
+        // grab the location of touch
+        var touchLocation = e.targetTouches[0];
 
-        box2.addEventListener('touchmove', function(e){
-            touchobj = e.changedTouches[0] // reference first touch point for this event
-            var dist = parseInt(touchobj.clientX) - startx // calculate dist traveled by touch point
-            // move box according to starting pos plus dist
-            // with lower limit 0 and upper limit 380 so it doesn't move outside track:
-            box2.style.left = ( (boxleft + dist > 380)? 380 : (boxleft + dist < 0)? 0 : boxleft + dist ) + 'px'
-            e.preventDefault()
-        }, false)
-    }
+        // assign box new coordinates based on the touch.
+        box.style.left = touchLocation.pageX + 'px';
+        box.style.top = touchLocation.pageY + 'px';
+    })
 
-}, false)
+    /* record the position of the touch
+    when released using touchend event.
+    This will be the drop position. */
+
+    box.addEventListener('touchend', function(e) {
+        // current box position.
+        var x = parseInt(box.style.left);
+        var y = parseInt(box.style.top);
+    })
+}
+
+// Make the DIV element draggable:
+for (let i = 0; i < document.getElementsByClassName("draggableContent").length; i++) {
+    dragElement(document.getElementsByClassName("draggableContent")[i]);
+}
