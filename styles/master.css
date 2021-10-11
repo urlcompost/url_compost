@@ -41,6 +41,10 @@ body {
     font-size: 50px;
 }
 
+#instructions {
+    z-index: 12;
+}
+
 #footer {
     position: fixed;
     left: 0;
