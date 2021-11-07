@@ -1,0 +1,12 @@
+#menu {
+    z-index: 12;
+    position: fixed;
+    top: 1em;
+    right: 1em;
+}
+
+#menu a {
+    font-size: 200%;
+    font-weight: bold;
+    color: red;
+}

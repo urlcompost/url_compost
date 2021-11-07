@@ -1,12 +1,49 @@
-body {
-    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+html {
+    height: 100%;
 }
 
-#content {
-    margin: 0;
+body {
+    min-height: 100%;
+    background-image: url("../assets/cover.png")
+}
+
+#draggables {
+    min-height: 100%;
+}
+
+.draggableContent {
+    width: 500px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) }
-}​
+    z-index: 9;
+    text-align: center;
+    cursor: move;
+}
+
+.draggableContentHeader {
+    cursor: move;
+    z-index: 10;
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2em;
+    background-color: yellow;
+    z-index: 12;
+    font-size:200%;
+    font-weight: bold;
+    font-variant-position: sub;
+}
+
+marquee {
+    behavior: scroll;
+    direction: left;
+}
+
+#myCanvas {
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+}
