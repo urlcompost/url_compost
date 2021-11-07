@@ -2,17 +2,6 @@ body {
     font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
 }
 
-#picture {
-    position: fixed;
-}
-
-#content {
-    margin: 0;
-    position: absolute;
-    left: 50%;
-    margin-right: -50%;
-}​
-
 #menu {
     z-index: 12;
     position: fixed;
@@ -24,12 +13,4 @@ body {
     font-size: 200%;
     font-weight: bold;
     color: red;
-}
-
-p {
-    font-size: 50%;
-}
-
-img {
-    width: 50%;
 }
