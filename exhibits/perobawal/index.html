@@ -13,54 +13,76 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+
+    <style media="screen">
+    .center-screen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+    }
+
+    h1, h2 {
+        background-color: white;
+        color: black;
+    }
+    </style>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <canvas id="myCanvas"></canvas>
 
-    <div class="draggableContent">
-        <div class="draggableContentHeader">📰</div>
-        <h1><a href="sections/dyaryo/dyaryo.html">DYARYO</a></h1>
-        <h2>tungkol sa pagmamanipula ng estado sa balitang nanggagaling sa mga alternatibong pahayagan</h2>
-    </div>
-
-    <div class="draggableContent">
-        <div class="draggableContentHeader">📺</div>
-        <h1><a href="sections/tv/tv.html">T.V.</a></h1>
-        <h2>namumutawing mukha ng censorship</h2>
-    </div>
-
-    <div class="draggableContent">
-        <div class="draggableContentHeader">📻</div>
-        <h1><a href="sections/radyo/radyo.html">RADYO</a></h1>
-        <h2>archive ng mga tunog</h2>
-    </div>
-
-    <div class="draggableContent">
-        <div class="draggableContentHeader">🌐</div>
-        <h1><a href="sections/internet/internet.html">INTERNET</a></h1>
-        <h2>anti-troll-palayan</h2>
-    </div>
-
-    <div class="draggableContent">
-        <div class="draggableContentHeader">❓</div>
-        <h1>ABOUT</h1>
-        <h2>nagsisilbi ang website na ito bilang pakikibaka tungo sa tunay na press freedom</h2>
-        <h2>gawa ni <a href="https://www.instagram.com/wakisalvador/">waki</a></h2>
-        <h2>advocacy artwork para sa UP Fair</h2>
-    </div>
-
-    <div class="draggableContent">
-        <div class="draggableContentHeader">✊🏽</div>
-        <h1><a href="sections/pagpupugay/pagpupugay.html">PAGPUPUGAY</a></h1>
-        <h2>pag-aalala sa mga nauna</h2>
-    </div>
-
+    <table class="center-screen">
+        <tr>
+            <td>
+                <h1><a href="sections/dyaryo/dyaryo.html">📰 DYARYO 📰</a></h1>
+                <h2>tungkol sa pagmamanipula ng estado sa balitang nanggagaling sa mga alternatibong pahayagan</h2>
+                <br>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h1><a href="sections/dyaryo/dyaryo.html">📺 T.V. 📺</a></h1>
+                <h2>namumutawing mukha ng censorship</h2>
+                <br>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h1><a href="sections/dyaryo/dyaryo.html">📻 RADYO 📻</a></h1>
+                <h2>archive ng mga tunog</h2>
+                <br>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h1><a href="sections/dyaryo/dyaryo.html">🌐 INTERNET 🌐</a></h1>
+                <h2>anti-troll-palayan</h2>
+                <br>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h1><a href="sections/dyaryo/dyaryo.html">❓ ABOUT ❓</a></h1>
+                <h2>nagsisilbi ang website na ito bilang pakikibaka tungo sa tunay na press freedom</h2>
+                <h2>gawa ni <a href="https://www.instagram.com/wakisalvador/">waki</a></h2>
+                <h2>advocacy artwork para sa UP Fair</h2>
+                <br>
+                <br>
+                <br>
+                <br>
+            </td>
+        </tr>
+    </table>
 
     <div id="footer">
         <marquee>
-            pwede mong i-drag yan //
             DEFEND PRESS FREEDOM //
             DEFEND PRESS FREEDOM //
             DEFEND PRESS FREEDOM //
